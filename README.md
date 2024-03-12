@@ -6,6 +6,8 @@ utiliza file = open('file.txt', 'w') y file.write
 
 poner keys supported
 
+elite font
+
 code:
 
     WScript.sleep 2000
