@@ -36,14 +36,14 @@ parser.add_argument('--close', '-c',
 args = parser.parse_args()
 
 # hacemos la clase color
-class color
-  RED = Fore.RED + Back.RESET
-  RESET = Fore.RESET + Back.RESET
+class color:
+    RED = Fore.RED + Back.RESET
+    RESET = Fore.RESET + Back.RESET
 
 # hacemos la función principal
 def main():
-  os.system('cls')
-  title = '''
+    os.system('cls')
+    title = '''
  ▌ ▐·▄▄▄▄· .▄▄ · ▪   ▐ ▄  ▐▄▄▄▄▄▄ . ▄▄· ▄▄▄▄▄▪         ▐ ▄ 
 ▪█·█▌▐█ ▀█▪▐█ ▀. ██ •█▌▐█  ·██▀▄.▀·▐█ ▌▪•██  ██ ▪     •█▌▐█   By ZombieGeek0, Copyright© 2024
 ▐█▐█•▐█▀▀█▄▄▀▀▀█▄▐█·▐█▐▐▌▪▄ ██▐▀▀▪▄██ ▄▄ ▐█.▪▐█· ▄█▀▄ ▐█▐▐▌   GitHub: https://www.github.com/ZombieGeek0/VBSInjection
@@ -52,37 +52,39 @@ def main():
 '''
     
     if args.open == 'true':
-      file = open('inject.vbs', 'w')
-      sys.exit()
+        file = open('inject.vbs', 'w')
+        file.close()
+        sys.exit()
 
-    if args.begin:
-      file.write('Set WshShell = WScript.CreateObject("WScript.Shell")\n')
-      file.write('strName = wshShell.ExpandEnvironmentStrings( "%USERNAME%" )\n')
-      sys.exit()
+    if args.begin == 'true':
+        file = open('inject.vbs', 'w')
+        file.write('Set WshShell = WScript.CreateObject("WScript.Shell")\n')
+        file.write('strName = wshShell.ExpandEnvironmentStrings( "%USERNAME%" )\n')
 
     elif args.sleep:
-      file.write(f'WScript.sleep {args.sleep}\n')
-      sys.exit()
+        sleep = args.sleep
+        file.write(f'WScript.sleep {sleep}\n')
+        sys.exit()
 
     elif args.write:
-      file.write(f'wshshell.sendkeys "{args.write}"\n')
-      sys.exit()
+        file.write(f'wshshell.sendkeys "{args.write}"\n')
+        sys.exit()
 
     elif args.keyhot:
-      file.write('wshshell.sendkeys "{' + args.keyhoy + '}"\n')
-      sys.exit()
+        file.write('wshshell.sendkeys "{' + args.keyhoy + '}"\n')
+        sys.exit()
 
     elif args.appactivate:
-      file.write(f'wshshell.run "{args.appactivate}"\n')
-      file.write(f'wshshell.AppActivate "{args.appactivate}"\n')
-      sys.exit()
+        file.write(f'wshshell.run "{args.appactivate}"\n')
+        file.write(f'wshshell.AppActivate "{args.appactivate}"\n')
+        sys.exit()
 
     elif args.close == 'true':
-      file.close()
-      sys.exit()
+        file.close()
+        sys.exit()
 
     else:
-      print(f'{color.RED}\n[>]: Error: La expresión {choice} es inválida o no existe\n')
+        print(f'{color.RED}\n[>]: Error: Verifica si has añadido todos los parámetros necesarios\n')
 
 
 
