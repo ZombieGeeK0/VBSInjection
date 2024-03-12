@@ -4,6 +4,21 @@
 
 ![VBSInjection](https://github.com/ZombieGeeK0/VBSInjection/assets/158185295/c91c9fff-d100-40fc-86c5-d156febc299d)
 
+<hr>
+
+`[INFO]` Este es un proyecto para Windows, pero también se pueden generar los scripts en Linux.
+
+`[INFO]` Este proyecto combina Python, BATCH y VBS (Visual Basic Scripting).
+
+`[INFO]` Especiales agradecimientos
+
+
+
+
+
+
+
+
 poner keys supported
 
 coundo se publique poner el social preview
