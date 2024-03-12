@@ -51,8 +51,15 @@ def main():
 . ▀  ·▀▀▀▀  ▀▀▀▀ ▀▀▀▀▀ █▪ ▀▀▀• ▀▀▀ ·▀▀▀  ▀▀▀ ▀▀▀ ▀█▄▀▪▀▀ █▪
 '''
     
-    if args.open:
-      pass
+    if args.open == 'true':
+      file = open('inject.vbs', 'w')
+      sys.exit()
+
+    if args.begin:
+      file.write("")
+
+    if args.close == 'true':
+      file.close()
       sys.exit()
 
     else:
