@@ -8,6 +8,7 @@ añadir a euron en colaboradores
 
 code:
 
+```vbs
     Set WshShell = WScript.CreateObject("WScript.Shell")
     strName = wshShell.ExpandEnvironmentStrings( "%USERNAME%" )
     x=msgbox ("CrÌtico: Tu sistema está gravemente afectado por múltiples amenazas. Para abortar todos los procesos, pulsa 'Anular'. Para volver a escanear, pulsa 'Reintentar'. Para continuar con todos los procesos, pulsa 'Omitir'." ,2+16, "Virus          encontrando por Windows Defender©")
@@ -215,3 +216,4 @@ code:
     wshshell.sendkeys "{ENTER}"
     WScript.sleep 4000
     msgbox "Solo estaba bromeando -EsGeeks- :)"
+```
