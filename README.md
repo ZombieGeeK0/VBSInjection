@@ -1,6 +1,12 @@
 # VBSInjection
 
+`[INFO]` Imagen:
+
+![VBSInjection](https://github.com/ZombieGeeK0/VBSInjection/assets/158185295/c91c9fff-d100-40fc-86c5-d156febc299d)
+
 poner keys supported
+
+piner video en vez de imagen
 
 elite font
 
