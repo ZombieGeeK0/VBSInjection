@@ -1,5 +1,5 @@
 # importamos las librerías necesarias
-import os, argparse
+import os, argparse, sys
 from colorama import Fore, Back
 
 # cremos los argumentos de parser
@@ -56,14 +56,33 @@ def main():
       sys.exit()
 
     if args.begin:
-      file.write("")
+      file.write('Set WshShell = WScript.CreateObject("WScript.Shell")\n')
+      file.write('strName = wshShell.ExpandEnvironmentStrings( "%USERNAME%" )\n')
+      sys.exit()
 
-    if args.close == 'true':
+    elif args.sleep:
+      file.write(f'WScript.sleep {args.sleep}\n')
+      sys.exit()
+
+    elif args.write:
+      file.write(f'wshshell.sendkeys "{args.write}"\n')
+      sys.exit()
+
+    elif args.keyhot:
+      file.write('wshshell.sendkeys "{' + args.keyhoy + '}"\n')
+      sys.exit()
+
+    elif args.appactivate:
+      file.write(f'wshshell.run "{args.appactivate}"\n')
+      file.write(f'wshshell.AppActivate "{args.appactivate}"\n')
+      sys.exit()
+
+    elif args.close == 'true':
       file.close()
       sys.exit()
 
     else:
-      print(f'{color.RED}[>]: Error: La expresión {choice} es inválida o no existe')
+      print(f'{color.RED}\n[>]: Error: La expresión {choice} es inválida o no existe\n')
 
 
 
