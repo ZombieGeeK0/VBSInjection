@@ -6,6 +6,8 @@
 
 poner keys supported
 
+coundo se publique poner el social preview
+
 piner video en vez de imagen
 
 elite font
