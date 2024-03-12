@@ -1,18 +1,10 @@
 # VBSInjection
 
-vas personalizando un prigramita hasta que se parece a msfvenom y es un payload de keys injection
-
-utiliza file = open('file.txt', 'w') y file.write
-
 poner keys supported
-
-hacer argumento para leer el archivo final
-
-hotkey va a entrar en conflicto con --help cxambiar
 
 elite font
 
-control c para salir del while true
+añadir a euron en colaboradores
 
 code:
 
