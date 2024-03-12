@@ -2,6 +2,8 @@
 
 vas personalizando un prigramita hasta que se parece a msfvenom y es un payload de keys injection
 
+utiliza file = open('file.txt', 'w') y file.write
+
 code:
 
     WScript.sleep 2000
