@@ -5,10 +5,6 @@ from colorama import Fore, Back
 # cremos los argumentos de parser
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--open', '-o',
-                    required=False,
-                    help="Indica el nombre y la extensión del archivo a abrir")
-
 parser.add_argument('--begin', '-b',
                     required=False,
                     help="Empieza creando el objeto de VBS en el archivo. Este argumento es necesario para empezar a crear el script")
@@ -29,10 +25,6 @@ parser.add_argument('--appactivate', '-a',
                     required=False,
                     help="Avtiva la app indicada")
 
-parser.add_argument('--close', '-c',
-                    required=False,
-                    help="Cierra la edición del archivo")
-
 args = parser.parse_args()
 
 # hacemos la clase color
@@ -40,8 +32,12 @@ class color:
     RED = Fore.RED + Back.RESET
     RESET = Fore.RESET + Back.RESET
 
+# abrimos el archivo
+file = open('inject.vbs', 'w')
+
 # hacemos la función principal
 def main():
+    file = open('inject.vbs', 'w')
     os.system('cls')
     title = '''
  ▌ ▐·▄▄▄▄· .▄▄ · ▪   ▐ ▄  ▐▄▄▄▄▄▄ . ▄▄· ▄▄▄▄▄▪         ▐ ▄ 
@@ -53,17 +49,16 @@ def main():
     
     if args.open == 'true':
         file = open('inject.vbs', 'w')
-        file.close()
         sys.exit()
 
     if args.begin == 'true':
-        file = open('inject.vbs', 'w')
         file.write('Set WshShell = WScript.CreateObject("WScript.Shell")\n')
         file.write('strName = wshShell.ExpandEnvironmentStrings( "%USERNAME%" )\n')
+        sys.exit()
 
     elif args.sleep:
         sleep = args.sleep
-        file.write(f'WScript.sleep {sleep}\n')
+        file.write(f'WScript.sleep {args.sleep}\n')
         sys.exit()
 
     elif args.write:
@@ -86,6 +81,8 @@ def main():
     else:
         print(f'{color.RED}\n[>]: Error: Verifica si has añadido todos los parámetros necesarios\n')
 
+    
+file.close()
 
 
 main()
