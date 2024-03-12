@@ -29,6 +29,10 @@ parser.add_argument('--appactivate', '-a',
                     required=False,
                     help="Avtiva la app indicada")
 
+parser.add_argument('--close', '-c',
+                    required=False,
+                    help="Cierra el archivo")
+
 
 args = parser.parse_args()
 
@@ -74,6 +78,10 @@ def main():
         file = open('inject.vbs', 'a')
         file.write(f'wshshell.run "{args.appactivate}"\n')
         file.write(f'wshshell.AppActivate "{args.appactivate}"\n')
+        sys.exit()
+
+    elif args.close:
+        file.close()
         sys.exit()
 
     else:
