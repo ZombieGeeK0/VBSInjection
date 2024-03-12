@@ -37,20 +37,12 @@ class color:
     RED = Fore.RED + Back.RESET
     RESET = Fore.RESET + Back.RESET
 
-# abrimos el archivo
+# creamos la variable del archivo
 file = ''
 
 # hacemos la función principal
 def main():
-    # file = open('inject.vbs', 'x')
     os.system('cls')
-    title = '''
- ▌ ▐·▄▄▄▄· .▄▄ · ▪   ▐ ▄  ▐▄▄▄▄▄▄ . ▄▄· ▄▄▄▄▄▪         ▐ ▄ 
-▪█·█▌▐█ ▀█▪▐█ ▀. ██ •█▌▐█  ·██▀▄.▀·▐█ ▌▪•██  ██ ▪     •█▌▐█   By ZombieGeek0, Copyright© 2024
-▐█▐█•▐█▀▀█▄▄▀▀▀█▄▐█·▐█▐▐▌▪▄ ██▐▀▀▪▄██ ▄▄ ▐█.▪▐█· ▄█▀▄ ▐█▐▐▌   GitHub: https://www.github.com/ZombieGeek0/VBSInjection
- ███ ██▄▪▐█▐█▄▪▐█▐█▌██▐█▌▐▌▐█▌▐█▄▄▌▐███▌ ▐█▌·▐█▌▐█▌.▐▌██▐█▌
-. ▀  ·▀▀▀▀  ▀▀▀▀ ▀▀▀▀▀ █▪ ▀▀▀• ▀▀▀ ·▀▀▀  ▀▀▀ ▀▀▀ ▀█▄▀▪▀▀ █▪
-'''
 
     if args.open == 'true':
         file = open('inject.vbs', 'x')
@@ -63,8 +55,9 @@ def main():
         sys.exit()
 
     elif args.sleep:
+        wait = int(args.sleep) * 1000
         file = open('inject.vbs', 'a')
-        file.write(f'WScript.sleep {args.sleep}\n')
+        file.write(f'WScript.sleep {wait}\n')
         sys.exit()
 
     elif args.write:
@@ -74,7 +67,7 @@ def main():
 
     elif args.keyhot:
         file = open('inject.vbs', 'a')
-        file.write('wshshell.sendkeys "{' + args.keyhoy + '}"\n')
+        file.write('wshshell.sendkeys "{' + args.keyhot + '}"\n')
         sys.exit()
 
     elif args.appactivate:
@@ -88,4 +81,5 @@ def main():
         sys.exit()
 
 
+# inciamos el menú
 main()
