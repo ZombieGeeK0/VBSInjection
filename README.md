@@ -8,6 +8,8 @@ poner keys supported
 
 elite font
 
+control c para salir del while true
+
 code:
 
     WScript.sleep 2000
