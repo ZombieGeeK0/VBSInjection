@@ -21,17 +21,19 @@ parser.add_argument('--write', '-w',
                     required=False,
                     help="Escribe una tecla normal en el script VBS para que sea inyectada cuando se ejecute")
 
-parser.add_argument('--hotkey', '-h',
+parser.add_argument('--keyhot', '-k',
                     required=False,
                     help="Escribe una hotkey especificada en mayúscuñas en el archivo VBS")
+
+parser.add_argument('--appactivate', '-a',
+                    required=False,
+                    help="Avtiva la app indicada")
 
 parser.add_argument('--close', '-c',
                     required=False,
                     help="Cierra la edición del archivo")
 
 args = parser.parse_args()
-
-# args.open
 
 # hacemos la clase color
 class color
@@ -48,24 +50,13 @@ def main():
  ███ ██▄▪▐█▐█▄▪▐█▐█▌██▐█▌▐▌▐█▌▐█▄▄▌▐███▌ ▐█▌·▐█▌▐█▌.▐▌██▐█▌
 . ▀  ·▀▀▀▀  ▀▀▀▀ ▀▀▀▀▀ █▪ ▀▀▀• ▀▀▀ ·▀▀▀  ▀▀▀ ▀▀▀ ▀█▄▀▪▀▀ █▪
 '''
-  print(f'{color.RED}{title}')
-
-  file = open('injection.vbs', 'w')
     
-  while True:
-
-    choice = input(f'\n{color.RED}[>]:  ')
-    
-    if 'start' in choice:
-      file.write('Set WshShell = WScript.CreateObject("WScript.Shell")\n')
-      file.write('strName = wshShell.ExpandEnvironmentStrings( "%USERNAME%" )'
-      
+    if args.open:
+      pass
+      sys.exit()
 
     else:
       print(f'{color.RED}[>]: Error: La expresión {choice} es inválida o no existe')
-
-
-  file.close()
 
 
 
