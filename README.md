@@ -158,10 +158,6 @@ wshshell.sendkeys "{ENTER}"
 
 <hr>
 
-python3 main.pt --help y poner ejemplos de ejecución
-
-<hr>
-
 `[INFO]` Ejemplos de `ejecución:`
 
     python3 main.py -o true
