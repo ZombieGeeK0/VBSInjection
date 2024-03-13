@@ -215,7 +215,3 @@ python3 main.pt --help y poner ejemplos de ejecución
 
 
 coundo se publique poner el social preview
-
-piner video en vez de imagen
-
-modificar el instalador check cambiameelnombre.sh
