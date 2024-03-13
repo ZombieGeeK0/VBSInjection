@@ -70,6 +70,25 @@ parser.add_argument('--open', '-o',
 args = parser.parse_args()
 ```
 
+`[INFO]` Para crear los colores del `texto:`
+
+```python
+class color:
+    RED = Fore.RED + Back.RESET
+    RESET = Fore.RESET + Back.RESET
+```
+
+`[INFO]` Procesamos los argumentos con una `condicional:`
+
+```python
+if args.begin == 'true':
+    file = open('inject.vbs', 'a')
+    file.write('Set WshShell = WScript.CreateObject("WScript.Shell")\n')
+    file.write('strName = wshShell.ExpandEnvironmentStrings( "%USERNAME%" )\n')
+    sys.exit()
+```
+
+<hr>
 
 
 
@@ -78,9 +97,11 @@ args = parser.parse_args()
 
 
 
-explixar el funcionamiento
 
-poner keys supported
+
+
+
+EJEMPLOS
 
 coundo se publique poner el social preview
 
