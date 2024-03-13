@@ -167,19 +167,20 @@ python3 main.pt --help y poner ejemplos de ejecución
     wshshell.sendkeys "{ENTER}"
 
 `[INFO]` En este caso el `programa` serviría para abrir el `CMD,` ejecutar el comando `ipconfig` y salir del `terminal.`
+
+## 🎖️ CONTRIBUIDORES 🎖️
+
+- <a href="https://www.github.com/Euronymou5">Euronymou5</a>
+- <a href="https://www.github.com/ZombieGeek0">ZombieGeek0</a>
     
 <hr>
 
+`[ 📬 ]` Contacta conmigo a través de `Discord` mandando una invitación a `qwfkr.`
 
+    qwfkr
+`[ 📬 ]` Si lo prefieres, mándame un correo a `3xpl017.contact@proton.me.`
 
-
-
-
-
-
-
-
-
+    3xpl017.contact@proton.me.
 
 
 
