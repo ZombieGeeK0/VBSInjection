@@ -51,6 +51,26 @@
 
 `[INFO]` Funcionamiento:
 
+`[INFO]` Se importan las `librerías:`
+
+```python
+import os, argparse, sys
+from colorama import Fore, Back
+```
+
+`[INFO]` Creamos los argumentos de `parser:`
+
+```python
+parser = argparse.ArgumentParser()
+
+parser.add_argument('--open', '-o',
+                    required=False,
+                    help="Indica el nombre y la extensión del archivo a abrir")
+
+args = parser.parse_args()
+```
+
+
 
 
 
@@ -70,7 +90,6 @@ elite font
 
 añadir a euron en colaboradores
 
-hacer check en el instalador de linux
 
 code:
 
