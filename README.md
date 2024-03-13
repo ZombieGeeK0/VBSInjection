@@ -10,8 +10,17 @@
 
 `[INFO]` Este proyecto combina Python, BATCH y VBS (Visual Basic Scripting).
 
-`[INFO]` Especiales agradecimientos a (Euronymou5) [https://www.github.com/Euronymou5]
+`[INFO]` Especiales agradecimientos a <a href="https://www.github.com/Euronymou5">Euronymou5</a> sin el que este proyecto habría sido inviable.
 
+`[INFO]` Sistemas operativos soportados:
+
+| Sistema operativo  | Soporte |
+| ------------- | ------------- |
+| Windows  | ✔️  |
+| Linux  | ✔️  |
+| MacOS | :x: |
+| Android | :x: |
+| Apple & IOS | :x: |
 
 
 
