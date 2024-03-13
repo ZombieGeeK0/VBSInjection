@@ -207,11 +207,3 @@ python3 main.pt --help y poner ejemplos de ejecución
 `[ 📬 ]` Si lo prefieres, mándame un correo a `3xpl017.contact@proton.me.`
 
     3xpl017.contact@proton.me.
-
-
-
-
-
-
-
-coundo se publique poner el social preview
