@@ -42,10 +42,34 @@
 
 `[INFO]` Hotkeys `soportadas:`
 
-| Hotkey  | Soporte |
+`[INFO]` Source: https://ss64.com/vb/sendkeys.html
+
+| Hotkey  | Manera |
 | ------------- | ------------- |
-| ENTER  | ✔️  |
-| ALT F4  | EN PROCESO |
+| SHIFT| (+ prefix) wshshell.sendkeys "`%`{F6}" |
+| CTRL | (^ PREFIX) wshshell.sendkeys "`^`{escape}" |
+| ALT | (% prefix) wshshell.sendkeys "`%`{F4}" |
+
+| Hotkey | Soporte para la v1 |
+| ------------- | ------------- |
+| ENTER | ✔️ |
+| ESCAPE | ✔️ |
+| BACKSPACE | ✔️ |
+| BREAK | ✔️ |
+| CAPSLOCK | ✔️ |
+| CLEAR | ✔️ |
+| DELETE | ✔️ |
+| INSERT | ✔️ |
+| LEFT/RIGHT/UP/DOWN | ✔️ |
+| END | ✔️ |
+| F1-F16 | ✔️ |
+| HELP | ✔️ |
+| HOME | ✔️ |
+| NUMLOCK | ✔️ |
+| PGUP/PGDN | ✔️ |
+| PRTSC (print screen) | ✔️ |
+| SCROLLOCK | ✔️ |
+| TAB | ✔️ |
 
 <hr>
 
