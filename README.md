@@ -6,13 +6,13 @@
 
 <hr>
 
-`[INFO]` Este es un proyecto para Windows, pero también se pueden generar los scripts en Linux.
+`[INFO]` Este es un proyecto para `Windows,` pero también se pueden generar los `scripts en Linux.`
 
-`[INFO]` Este proyecto combina Python, BATCH y VBS (Visual Basic Scripting).
+`[INFO]` Este proyecto combina `Python, BATCH y VBS (Visual Basic Scripting).`
 
-`[INFO]` Especiales agradecimientos a <a href="https://www.github.com/Euronymou5">Euronymou5</a> sin el que este proyecto habría sido inviable.
+`[INFO]` Especiales agradecimientos a <a href="https://www.github.com/Euronymou5">`Euronymou5`</a> sin el que este proyecto habría sido inviable.
 
-`[INFO]` Sistemas operativos soportados:
+`[INFO]` Sistemas operativos `soportados:`
 
 | Sistema operativo  | Soporte |
 | ------------- | ------------- |
@@ -22,11 +22,23 @@
 | Android | :x: |
 | Apple & IOS | :x: |
 
+`[INFO]` Hotkeys `soportadas:`
+
+| Hotkey  | Soporte |
+| ------------- | ------------- |
+| ENTER  | ✔️  |
+| ALT F4  | EN PROCESO |
+
+`[INFO]` Funcionamiento:
 
 
 
 
 
+
+
+
+explixar el funcionamiento
 
 poner keys supported
 
