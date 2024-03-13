@@ -130,24 +130,64 @@ wshshell.sendkeys "hello"
 wshshell.sendkeys "{ENTER}"
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
+<hr>
 
 python3 main.pt --help y poner ejemplos de ejecución
 
-hacer msgbox en vbs
+<hr>
 
-EJEMPLOS
+`[INFO]` Ejemplos de `ejecución:`
+
+    python3 main.py -o true
+    python3 main.py -b true
+    python3 main.py -s 1
+    python3 main.py -a cmd.exe
+    python3 main.py -s 1
+    python3 main.py -w ipconfig
+    python3 main.py -k ENTER
+    python3 main.py -s 1
+    python3 main.py -w exit
+    python3 main.py -k ENTER
+    python3 main.py -c true
+
+`[INFO]` Esto generaría un programa de output `(inject.vbs)` donde estaría el siguiente `contenido:`
+
+    Set WshShell = WScript.CreateObject("WScript.Shell")
+    strName = wshShell.ExpandEnvironmentStrings( "%USERNAME%" )
+    WScript.sleep 1000
+    wshshell.run "cmd.exe"
+    wshshell.AppActivate "cmd.exe"
+    WScript.sleep 1000
+    wshshell.sendkeys "ipconfig"
+    wshshell.sendkeys "{ENTER}"
+    WScript.sleep 1000
+    wshshell.sendkeys "exit"
+    wshshell.sendkeys "{ENTER}"
+
+`[INFO]` En este caso el `programa` serviría para abrir el `CMD,` ejecutar el comando `ipconfig` y salir del `terminal.`
+    
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+poner msgbox en los ejemplos de ejecuciuon
+
+hacer msgbox en vbs
 
 coundo se publique poner el social preview
 
