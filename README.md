@@ -22,12 +22,32 @@
 | Android | :x: |
 | Apple & IOS | :x: |
 
+<hr>
+
+`[INFO]` Instalación en `Windows:`
+
+`[1]` Descarga el archivo `.zip`
+
+`[2]` Abre la carpeta y ejecuta el `install.bat` gráficamente o desde el terminal con `start install.bat`
+
+<hr>
+
+`[INFO]` Instalación en `Linux:`
+
+`[1]` Instalación con `comandos:`
+
+    sudo apt update && sudo apt upgrade && git clone https://www.github.com/VBSInjection && cd VBSInjection && chmod +x setup.sh && chmod 777 setup.sh && sudo bash setup.sh
+
+<hr>
+
 `[INFO]` Hotkeys `soportadas:`
 
 | Hotkey  | Soporte |
 | ------------- | ------------- |
 | ENTER  | ✔️  |
 | ALT F4  | EN PROCESO |
+
+<hr>
 
 `[INFO]` Funcionamiento:
 
