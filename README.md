@@ -49,6 +49,32 @@
 
 <hr>
 
+`[INFO]` Comandos:
+
+    $ python3 main.py --help
+    usage: main.py [-h] [--open OPEN] [--begin BEGIN] [--sleep SLEEP] [--write WRITE] [--keyhot KEYHOT] [--appactivate APPACTIVATE] [--message MESSAGE]
+                   [--close CLOSE]
+    
+    options:
+      -h, --help            show this help message and exit
+      --open OPEN, -o OPEN  Indica el nombre y la extensión del archivo a abrir
+      --begin BEGIN, -b BEGIN
+                            Empieza creando el objeto de VBS en el archivo. Este argumento es necesario para empezar a crear el script
+      --sleep SLEEP, -s SLEEP
+                            Crea una pausa en el script de VBS del tiempo especificado en el argumento
+      --write WRITE, -w WRITE
+                            Escribe una tecla normal en el script VBS para que sea inyectada cuando se ejecute
+      --keyhot KEYHOT, -k KEYHOT
+                            Escribe una hotkey especificada en mayúscuñas en el archivo VBS
+      --appactivate APPACTIVATE, -a APPACTIVATE
+                            Avtiva la app indicada
+      --message MESSAGE, -m MESSAGE
+                            Indica el texto a mostrar en el mensaje
+      --close CLOSE, -c CLOSE
+                            Cierra el archivo 
+
+<hr>
+
 `[INFO]` Funcionamiento:
 
 `[INFO]` Se importan las `librerías:`
