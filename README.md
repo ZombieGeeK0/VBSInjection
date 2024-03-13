@@ -194,6 +194,12 @@ python3 main.pt --help y poner ejemplos de ejecución
 
 `[INFO]` En este caso el `programa` serviría para abrir el `CMD,` ejecutar el comando `ipconfig` y salir del `terminal.`
 
+<hr>
+
+![imagen](https://github.com/ZombieGeeK0/VBSInjection/assets/158185295/4a05d544-0e7e-4813-b29d-684b25bcd4ad)
+
+<hr>
+
 ## 🎖️ CONTRIBUIDORES 🎖️
 
 - <a href="https://www.github.com/Euronymou5">Euronymou5</a>
