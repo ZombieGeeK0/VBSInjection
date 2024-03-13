@@ -29,10 +29,13 @@ parser.add_argument('--appactivate', '-a',
                     required=False,
                     help="Avtiva la app indicada")
 
+parser.add_argument('--message', '-m',
+                    required=False,
+                    help="Indica el texto a mostrar en el mensaje")
+
 parser.add_argument('--close', '-c',
                     required=False,
                     help="Cierra el archivo")
-
 
 args = parser.parse_args()
 
@@ -79,6 +82,11 @@ def main():
         file.write(f'wshshell.run "{args.appactivate}"\n')
         file.write(f'wshshell.AppActivate "{args.appactivate}"\n')
         sys.exit()
+
+    elif args.message:
+      file = open('inject.vbs', 'a')
+      file.write('MsgBox"",46,""')
+      sys.exit()
 
     elif args.close:
         file.close()
