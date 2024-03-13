@@ -10,7 +10,7 @@
 
 `[INFO]` Este proyecto combina Python, BATCH y VBS (Visual Basic Scripting).
 
-`[INFO]` Especiales agradecimientos
+`[INFO]` Especiales agradecimientos a (Euronymou5) [https://www.github.com/Euronymou5]
 
 
 
