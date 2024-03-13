@@ -187,14 +187,9 @@ python3 main.pt --help y poner ejemplos de ejecución
 
 
 
-poner msgbox en los ejemplos de ejecuciuon
-
-hacer msgbox en vbs
-
 coundo se publique poner el social preview
 
 piner video en vez de imagen
 
-elite font
 
 añadir a euron en colaboradores
