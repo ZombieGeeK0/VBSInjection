@@ -50,6 +50,8 @@ elite font
 
 añadir a euron en colaboradores
 
+hacer check en el instalador de linux
+
 code:
 
 ```vbs
