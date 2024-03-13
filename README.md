@@ -90,6 +90,26 @@ if args.begin == 'true':
 
 <hr>
 
+`[INFO]` Comandos de `VBS soportados:`
+
+`[INFO]` MsgBox:
+
+```vbs
+MsgBox"Hello World",48,"Mensaje del sistema"
+```
+
+`[INFO]` Inciar el código creando el `objeto:`
+
+```vbs
+Set WshShell = WScript.CreateObject("WScript.Shell")
+strName = wshShell.ExpandEnvironmentStrings( "%USERNAME%" )
+```
+
+`[INFO]` Iniciar una app:
+
+```vbs
+
+```
 
 
 
@@ -100,6 +120,8 @@ if args.begin == 'true':
 
 
 
+
+hacer msgbox en vbs
 
 EJEMPLOS
 
