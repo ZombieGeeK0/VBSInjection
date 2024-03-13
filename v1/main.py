@@ -85,7 +85,7 @@ def main():
 
     elif args.message:
       file = open('inject.vbs', 'a')
-      file.write('MsgBox"",46,""')
+      file.write(f'MsgBox"{args.message}",48,"Mensaje del sistema"')
       sys.exit()
 
     elif args.close:
