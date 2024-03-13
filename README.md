@@ -143,6 +143,7 @@ python3 main.pt --help y poner ejemplos de ejecución
     python3 main.py -s 1
     python3 main.py -a cmd.exe
     python3 main.py -s 1
+    python3 main.py -m Ejecutando...
     python3 main.py -w ipconfig
     python3 main.py -k ENTER
     python3 main.py -s 1
@@ -158,6 +159,7 @@ python3 main.pt --help y poner ejemplos de ejecución
     wshshell.run "cmd.exe"
     wshshell.AppActivate "cmd.exe"
     WScript.sleep 1000
+    MsgBox"Ejecutando...",48,"Mensaje del sistema"
     wshshell.sendkeys "ipconfig"
     wshshell.sendkeys "{ENTER}"
     WScript.sleep 1000
